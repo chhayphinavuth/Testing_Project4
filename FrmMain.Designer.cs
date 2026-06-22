@@ -77,6 +77,7 @@
             tabPagePurchaseInfo = new TabPage();
             tabPageReport = new TabPage();
             imageList1 = new ImageList(components);
+            uiBarChart1 = new Sunny.UI.UIBarChart();
             uiTabControlMain.SuspendLayout();
             tabPageLogIn.SuspendLayout();
             tabPageUserAccount.SuspendLayout();
@@ -113,6 +114,7 @@
             // 
             // tabPageLogIn
             // 
+            tabPageLogIn.Controls.Add(uiBarChart1);
             tabPageLogIn.Controls.Add(uiLabel5);
             tabPageLogIn.Controls.Add(button1);
             tabPageLogIn.Controls.Add(comboBox1);
@@ -651,6 +653,18 @@
             imageList1.Images.SetKeyName(8, "Download from the Cloud_1.ico");
             imageList1.Images.SetKeyName(9, "Key.ico");
             // 
+            // uiBarChart1
+            // 
+            uiBarChart1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiBarChart1.LegendFont = new Font("Microsoft Sans Serif", 9F);
+            uiBarChart1.Location = new Point(679, 229);
+            uiBarChart1.MinimumSize = new Size(1, 1);
+            uiBarChart1.Name = "uiBarChart1";
+            uiBarChart1.Size = new Size(324, 139);
+            uiBarChart1.SubFont = new Font("Microsoft Sans Serif", 9F);
+            uiBarChart1.TabIndex = 8;
+            uiBarChart1.Text = "uiBarChart1";
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -725,5 +739,6 @@
         private Label label1;
         private Button button1;
         private Sunny.UI.UILabel uiLabel5;
+        private Sunny.UI.UIBarChart uiBarChart1;
     }
 }
