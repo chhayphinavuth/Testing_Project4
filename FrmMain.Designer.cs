@@ -32,8 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             uiTabControlMain = new Sunny.UI.UITabControlMenu();
             tabPageLogIn = new TabPage();
-            uiTextBox1 = new Sunny.UI.UITextBox();
-            uiLabel6 = new Sunny.UI.UILabel();
             uiLabel5 = new Sunny.UI.UILabel();
             button1 = new Button();
             comboBox1 = new ComboBox();
@@ -115,8 +113,6 @@
             // 
             // tabPageLogIn
             // 
-            tabPageLogIn.Controls.Add(uiTextBox1);
-            tabPageLogIn.Controls.Add(uiLabel6);
             tabPageLogIn.Controls.Add(uiLabel5);
             tabPageLogIn.Controls.Add(button1);
             tabPageLogIn.Controls.Add(comboBox1);
@@ -133,31 +129,6 @@
             tabPageLogIn.TabIndex = 3;
             tabPageLogIn.Text = "Log In";
             tabPageLogIn.UseVisualStyleBackColor = true;
-            // 
-            // uiTextBox1
-            // 
-            uiTextBox1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox1.Location = new Point(627, 330);
-            uiTextBox1.Margin = new Padding(4, 5, 4, 5);
-            uiTextBox1.MinimumSize = new Size(1, 16);
-            uiTextBox1.Name = "uiTextBox1";
-            uiTextBox1.Padding = new Padding(5);
-            uiTextBox1.ShowText = false;
-            uiTextBox1.Size = new Size(225, 167);
-            uiTextBox1.TabIndex = 9;
-            uiTextBox1.Text = "Hi";
-            uiTextBox1.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox1.Watermark = "";
-            // 
-            // uiLabel6
-            // 
-            uiLabel6.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel6.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel6.Location = new Point(607, 235);
-            uiLabel6.Name = "uiLabel6";
-            uiLabel6.Size = new Size(245, 151);
-            uiLabel6.TabIndex = 8;
-            uiLabel6.Text = "uiLabel6";
             // 
             // uiLabel5
             // 
@@ -753,8 +724,6 @@
         private TextBox textBox1;
         private Label label1;
         private Button button1;
-        private Sunny.UI.UILabel uiLabel6;
         private Sunny.UI.UILabel uiLabel5;
-        private Sunny.UI.UITextBox uiTextBox1;
     }
 }
