@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             uiTabControlMain = new Sunny.UI.UITabControlMenu();
             tabPageLogIn = new TabPage();
+            uiLabel6 = new Sunny.UI.UILabel();
+            uiLabel5 = new Sunny.UI.UILabel();
             button1 = new Button();
             comboBox1 = new ComboBox();
             label3 = new Label();
@@ -76,8 +78,7 @@
             tabPagePurchaseInfo = new TabPage();
             tabPageReport = new TabPage();
             imageList1 = new ImageList(components);
-            uiLabel5 = new Sunny.UI.UILabel();
-            uiLabel6 = new Sunny.UI.UILabel();
+            uiTextBox1 = new Sunny.UI.UITextBox();
             uiTabControlMain.SuspendLayout();
             tabPageLogIn.SuspendLayout();
             tabPageUserAccount.SuspendLayout();
@@ -114,6 +115,7 @@
             // 
             // tabPageLogIn
             // 
+            tabPageLogIn.Controls.Add(uiTextBox1);
             tabPageLogIn.Controls.Add(uiLabel6);
             tabPageLogIn.Controls.Add(uiLabel5);
             tabPageLogIn.Controls.Add(button1);
@@ -131,6 +133,25 @@
             tabPageLogIn.TabIndex = 3;
             tabPageLogIn.Text = "Log In";
             tabPageLogIn.UseVisualStyleBackColor = true;
+            // 
+            // uiLabel6
+            // 
+            uiLabel6.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel6.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel6.Location = new Point(739, 287);
+            uiLabel6.Name = "uiLabel6";
+            uiLabel6.Size = new Size(245, 151);
+            uiLabel6.TabIndex = 8;
+            uiLabel6.Text = "uiLabel6";
+            // 
+            // uiLabel5
+            // 
+            uiLabel5.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel5.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel5.Location = new Point(715, 148);
+            uiLabel5.Name = "uiLabel5";
+            uiLabel5.Size = new Size(150, 34);
+            uiLabel5.TabIndex = 7;
             // 
             // button1
             // 
@@ -414,7 +435,7 @@
             uiListBox1.Margin = new Padding(6, 8, 6, 8);
             uiListBox1.MinimumSize = new Size(1, 2);
             uiListBox1.Name = "uiListBox1";
-            uiListBox1.Padding = new Padding(3, 3, 3, 3);
+            uiListBox1.Padding = new Padding(3);
             uiListBox1.ShowText = false;
             uiListBox1.Size = new Size(500, 642);
             uiListBox1.TabIndex = 10;
@@ -644,24 +665,20 @@
             imageList1.Images.SetKeyName(8, "Download from the Cloud_1.ico");
             imageList1.Images.SetKeyName(9, "Key.ico");
             // 
-            // uiLabel5
+            // uiTextBox1
             // 
-            uiLabel5.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel5.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel5.Location = new Point(715, 148);
-            uiLabel5.Name = "uiLabel5";
-            uiLabel5.Size = new Size(150, 34);
-            uiLabel5.TabIndex = 7;
-            // 
-            // uiLabel6
-            // 
-            uiLabel6.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel6.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel6.Location = new Point(739, 287);
-            uiLabel6.Name = "uiLabel6";
-            uiLabel6.Size = new Size(245, 151);
-            uiLabel6.TabIndex = 8;
-            uiLabel6.Text = "uiLabel6";
+            uiTextBox1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiTextBox1.Location = new Point(585, 88);
+            uiTextBox1.Margin = new Padding(4, 5, 4, 5);
+            uiTextBox1.MinimumSize = new Size(1, 16);
+            uiTextBox1.Name = "uiTextBox1";
+            uiTextBox1.Padding = new Padding(5);
+            uiTextBox1.ShowText = false;
+            uiTextBox1.Size = new Size(225, 167);
+            uiTextBox1.TabIndex = 9;
+            uiTextBox1.Text = "Hi";
+            uiTextBox1.TextAlignment = ContentAlignment.MiddleLeft;
+            uiTextBox1.Watermark = "";
             // 
             // FrmMain
             // 
@@ -738,5 +755,6 @@
         private Button button1;
         private Sunny.UI.UILabel uiLabel6;
         private Sunny.UI.UILabel uiLabel5;
+        private Sunny.UI.UITextBox uiTextBox1;
     }
 }
