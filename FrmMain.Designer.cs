@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             uiTabControlMain = new Sunny.UI.UITabControlMenu();
             tabPageLogIn = new TabPage();
+            uiBarChart1 = new Sunny.UI.UIBarChart();
             uiLabel5 = new Sunny.UI.UILabel();
             button1 = new Button();
             comboBox1 = new ComboBox();
@@ -77,7 +78,7 @@
             tabPagePurchaseInfo = new TabPage();
             tabPageReport = new TabPage();
             imageList1 = new ImageList(components);
-            uiBarChart1 = new Sunny.UI.UIBarChart();
+            uiComboBox1 = new Sunny.UI.UIComboBox();
             uiTabControlMain.SuspendLayout();
             tabPageLogIn.SuspendLayout();
             tabPageUserAccount.SuspendLayout();
@@ -114,6 +115,7 @@
             // 
             // tabPageLogIn
             // 
+            tabPageLogIn.Controls.Add(uiComboBox1);
             tabPageLogIn.Controls.Add(uiBarChart1);
             tabPageLogIn.Controls.Add(uiLabel5);
             tabPageLogIn.Controls.Add(button1);
@@ -131,6 +133,18 @@
             tabPageLogIn.TabIndex = 3;
             tabPageLogIn.Text = "Log In";
             tabPageLogIn.UseVisualStyleBackColor = true;
+            // 
+            // uiBarChart1
+            // 
+            uiBarChart1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiBarChart1.LegendFont = new Font("Microsoft Sans Serif", 9F);
+            uiBarChart1.Location = new Point(679, 229);
+            uiBarChart1.MinimumSize = new Size(1, 1);
+            uiBarChart1.Name = "uiBarChart1";
+            uiBarChart1.Size = new Size(324, 139);
+            uiBarChart1.SubFont = new Font("Microsoft Sans Serif", 9F);
+            uiBarChart1.TabIndex = 8;
+            uiBarChart1.Text = "uiBarChart1";
             // 
             // uiLabel5
             // 
@@ -653,17 +667,24 @@
             imageList1.Images.SetKeyName(8, "Download from the Cloud_1.ico");
             imageList1.Images.SetKeyName(9, "Key.ico");
             // 
-            // uiBarChart1
+            // uiComboBox1
             // 
-            uiBarChart1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiBarChart1.LegendFont = new Font("Microsoft Sans Serif", 9F);
-            uiBarChart1.Location = new Point(679, 229);
-            uiBarChart1.MinimumSize = new Size(1, 1);
-            uiBarChart1.Name = "uiBarChart1";
-            uiBarChart1.Size = new Size(324, 139);
-            uiBarChart1.SubFont = new Font("Microsoft Sans Serif", 9F);
-            uiBarChart1.TabIndex = 8;
-            uiBarChart1.Text = "uiBarChart1";
+            uiComboBox1.DataSource = null;
+            uiComboBox1.FillColor = Color.White;
+            uiComboBox1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiComboBox1.ItemHoverColor = Color.FromArgb(155, 200, 255);
+            uiComboBox1.ItemSelectForeColor = Color.FromArgb(235, 243, 255);
+            uiComboBox1.Location = new Point(614, 97);
+            uiComboBox1.Margin = new Padding(4, 5, 4, 5);
+            uiComboBox1.MinimumSize = new Size(63, 0);
+            uiComboBox1.Name = "uiComboBox1";
+            uiComboBox1.Padding = new Padding(0, 0, 30, 2);
+            uiComboBox1.Size = new Size(225, 44);
+            uiComboBox1.SymbolSize = 24;
+            uiComboBox1.TabIndex = 9;
+            uiComboBox1.Text = "uiComboBox1";
+            uiComboBox1.TextAlignment = ContentAlignment.MiddleLeft;
+            uiComboBox1.Watermark = "";
             // 
             // FrmMain
             // 
@@ -740,5 +761,6 @@
         private Button button1;
         private Sunny.UI.UILabel uiLabel5;
         private Sunny.UI.UIBarChart uiBarChart1;
+        private Sunny.UI.UIComboBox uiComboBox1;
     }
 }
