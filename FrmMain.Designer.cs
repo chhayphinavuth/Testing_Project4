@@ -80,6 +80,7 @@
             tabPagePurchaseInfo = new TabPage();
             tabPageReport = new TabPage();
             imageList1 = new ImageList(components);
+            groupBox1 = new GroupBox();
             uiTabControlMain.SuspendLayout();
             tabPageLogIn.SuspendLayout();
             tabPageUserAccount.SuspendLayout();
@@ -88,6 +89,7 @@
             tabPageSupplierInfo.SuspendLayout();
             tabPagePurchase.SuspendLayout();
             tabControlPurchase.SuspendLayout();
+            tabPageReport.SuspendLayout();
             SuspendLayout();
             // 
             // uiTabControlMain
@@ -140,7 +142,7 @@
             // 
             uiSymbolButton1.Font = new Font("Microsoft Sans Serif", 12F);
             uiSymbolButton1.Location = new Point(440, 687);
-            uiSymbolButton1.Margin = new Padding(6, 6, 6, 6);
+            uiSymbolButton1.Margin = new Padding(6);
             uiSymbolButton1.MinimumSize = new Size(2, 2);
             uiSymbolButton1.Name = "uiSymbolButton1";
             uiSymbolButton1.Size = new Size(525, 90);
@@ -172,7 +174,7 @@
             uiBarChart1.Font = new Font("Microsoft Sans Serif", 12F);
             uiBarChart1.LegendFont = new Font("Microsoft Sans Serif", 9F);
             uiBarChart1.Location = new Point(1055, 317);
-            uiBarChart1.Margin = new Padding(4, 4, 4, 4);
+            uiBarChart1.Margin = new Padding(4);
             uiBarChart1.MinimumSize = new Size(2, 2);
             uiBarChart1.Name = "uiBarChart1";
             uiBarChart1.Size = new Size(550, 228);
@@ -472,7 +474,7 @@
             uiListBox1.Margin = new Padding(11, 12, 11, 12);
             uiListBox1.MinimumSize = new Size(2, 4);
             uiListBox1.Name = "uiListBox1";
-            uiListBox1.Padding = new Padding(4, 4, 4, 4);
+            uiListBox1.Padding = new Padding(4);
             uiListBox1.ShowText = false;
             uiListBox1.Size = new Size(850, 1054);
             uiListBox1.TabIndex = 10;
@@ -678,6 +680,7 @@
             // 
             // tabPageReport
             // 
+            tabPageReport.Controls.Add(groupBox1);
             tabPageReport.Location = new Point(201, 0);
             tabPageReport.Margin = new Padding(6, 8, 6, 8);
             tabPageReport.Name = "tabPageReport";
@@ -702,6 +705,15 @@
             imageList1.Images.SetKeyName(8, "Download from the Cloud_1.ico");
             imageList1.Images.SetKeyName(9, "Key.ico");
             // 
+            // groupBox1
+            // 
+            groupBox1.Location = new Point(755, 299);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(387, 214);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "groupBox1";
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
@@ -724,6 +736,7 @@
             tabPageSupplierInfo.ResumeLayout(false);
             tabPagePurchase.ResumeLayout(false);
             tabControlPurchase.ResumeLayout(false);
+            tabPageReport.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -779,5 +792,6 @@
         private Sunny.UI.UIBarChart uiBarChart1;
         private Sunny.UI.UIComboBox uiComboBox1;
         private Sunny.UI.UISymbolButton uiSymbolButton1;
+        private GroupBox groupBox1;
     }
 }
