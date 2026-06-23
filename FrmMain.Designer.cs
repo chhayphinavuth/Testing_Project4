@@ -79,8 +79,8 @@
             tabControlPurchase = new TabControl();
             tabPagePurchaseInfo = new TabPage();
             tabPageReport = new TabPage();
-            imageList1 = new ImageList(components);
             groupBox1 = new GroupBox();
+            imageList1 = new ImageList(components);
             uiTabControlMain.SuspendLayout();
             tabPageLogIn.SuspendLayout();
             tabPageUserAccount.SuspendLayout();
@@ -689,6 +689,15 @@
             tabPageReport.Text = "Reports";
             tabPageReport.UseVisualStyleBackColor = true;
             // 
+            // groupBox1
+            // 
+            groupBox1.Location = new Point(755, 299);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(708, 449);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "groupBox1";
+            // 
             // imageList1
             // 
             imageList1.ColorDepth = ColorDepth.Depth32Bit;
@@ -704,15 +713,6 @@
             imageList1.Images.SetKeyName(7, "Download from the Cloud.ico");
             imageList1.Images.SetKeyName(8, "Download from the Cloud_1.ico");
             imageList1.Images.SetKeyName(9, "Key.ico");
-            // 
-            // groupBox1
-            // 
-            groupBox1.Location = new Point(755, 299);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(387, 214);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
             // 
             // FrmMain
             // 
