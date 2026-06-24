@@ -68,11 +68,12 @@
             tabControlPurchase = new TabControl();
             tabPagePurchaseInfo = new TabPage();
             tabPageReport = new TabPage();
+            button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             listView1 = new ListView();
             imageList1 = new ImageList(components);
-            button3 = new Button();
+            button4 = new Button();
             uiTabControlMain.SuspendLayout();
             tabPageUserAccount.SuspendLayout();
             tabPageSuppliers.SuspendLayout();
@@ -96,12 +97,12 @@
             uiTabControlMain.Font = new Font("Microsoft Sans Serif", 12F);
             uiTabControlMain.ImageList = imageList1;
             uiTabControlMain.Location = new Point(0, 0);
-            uiTabControlMain.Margin = new Padding(3, 4, 3, 4);
+            uiTabControlMain.Margin = new Padding(6, 8, 6, 8);
             uiTabControlMain.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             uiTabControlMain.Multiline = true;
             uiTabControlMain.Name = "uiTabControlMain";
             uiTabControlMain.SelectedIndex = 0;
-            uiTabControlMain.Size = new Size(905, 515);
+            uiTabControlMain.Size = new Size(1923, 1056);
             uiTabControlMain.SizeMode = TabSizeMode.Fixed;
             uiTabControlMain.TabBackColor = Color.Goldenrod;
             uiTabControlMain.TabIndex = 4;
@@ -111,9 +112,9 @@
             // 
             tabPageLogIn.ImageIndex = 10;
             tabPageLogIn.Location = new Point(201, 0);
-            tabPageLogIn.Margin = new Padding(3, 4, 3, 4);
+            tabPageLogIn.Margin = new Padding(6, 8, 6, 8);
             tabPageLogIn.Name = "tabPageLogIn";
-            tabPageLogIn.Size = new Size(704, 515);
+            tabPageLogIn.Size = new Size(1722, 1056);
             tabPageLogIn.TabIndex = 3;
             tabPageLogIn.Text = "Log In";
             tabPageLogIn.UseVisualStyleBackColor = true;
@@ -135,19 +136,19 @@
             tabPageUserAccount.Controls.Add(LblUserID);
             tabPageUserAccount.Controls.Add(TxtUserID);
             tabPageUserAccount.Location = new Point(201, 0);
-            tabPageUserAccount.Margin = new Padding(3, 4, 3, 4);
+            tabPageUserAccount.Margin = new Padding(6, 8, 6, 8);
             tabPageUserAccount.Name = "tabPageUserAccount";
-            tabPageUserAccount.Size = new Size(858, 600);
+            tabPageUserAccount.Size = new Size(1722, 1056);
             tabPageUserAccount.TabIndex = 2;
             tabPageUserAccount.Text = "User Account";
             tabPageUserAccount.UseVisualStyleBackColor = true;
             // 
             // ButView
             // 
-            ButView.Location = new Point(256, 397);
-            ButView.Margin = new Padding(3, 4, 3, 4);
+            ButView.Location = new Point(544, 814);
+            ButView.Margin = new Padding(6, 8, 6, 8);
             ButView.Name = "ButView";
-            ButView.Size = new Size(334, 51);
+            ButView.Size = new Size(710, 105);
             ButView.TabIndex = 14;
             ButView.Text = "&VIEW";
             ButView.UseVisualStyleBackColor = true;
@@ -155,10 +156,10 @@
             // 
             // ButDel
             // 
-            ButDel.Location = new Point(492, 339);
-            ButDel.Margin = new Padding(3, 4, 3, 4);
+            ButDel.Location = new Point(1046, 695);
+            ButDel.Margin = new Padding(6, 8, 6, 8);
             ButDel.Name = "ButDel";
-            ButDel.Size = new Size(98, 51);
+            ButDel.Size = new Size(208, 105);
             ButDel.TabIndex = 13;
             ButDel.Text = "DEL";
             ButDel.UseVisualStyleBackColor = true;
@@ -166,10 +167,10 @@
             // 
             // ButUpdate
             // 
-            ButUpdate.Location = new Point(361, 339);
-            ButUpdate.Margin = new Padding(3, 4, 3, 4);
+            ButUpdate.Location = new Point(767, 695);
+            ButUpdate.Margin = new Padding(6, 8, 6, 8);
             ButUpdate.Name = "ButUpdate";
-            ButUpdate.Size = new Size(125, 51);
+            ButUpdate.Size = new Size(266, 105);
             ButUpdate.TabIndex = 12;
             ButUpdate.Text = "&UPDATE";
             ButUpdate.UseVisualStyleBackColor = true;
@@ -177,10 +178,10 @@
             // 
             // ButInsert
             // 
-            ButInsert.Location = new Point(256, 339);
-            ButInsert.Margin = new Padding(3, 4, 3, 4);
+            ButInsert.Location = new Point(544, 695);
+            ButInsert.Margin = new Padding(6, 8, 6, 8);
             ButInsert.Name = "ButInsert";
-            ButInsert.Size = new Size(98, 51);
+            ButInsert.Size = new Size(208, 105);
             ButInsert.TabIndex = 11;
             ButInsert.Text = "&INSERT";
             ButInsert.UseVisualStyleBackColor = true;
@@ -189,88 +190,93 @@
             // CboProFile
             // 
             CboProFile.FormattingEnabled = true;
-            CboProFile.Location = new Point(256, 281);
-            CboProFile.Margin = new Padding(3, 4, 3, 4);
+            CboProFile.Location = new Point(544, 576);
+            CboProFile.Margin = new Padding(6, 8, 6, 8);
             CboProFile.Name = "CboProFile";
-            CboProFile.Size = new Size(334, 33);
+            CboProFile.Size = new Size(705, 54);
             CboProFile.TabIndex = 10;
             // 
             // LblProFile
             // 
             LblProFile.AutoSize = true;
-            LblProFile.Location = new Point(51, 281);
+            LblProFile.Location = new Point(108, 576);
+            LblProFile.Margin = new Padding(6, 0, 6, 0);
             LblProFile.Name = "LblProFile";
-            LblProFile.Size = new Size(166, 25);
+            LblProFile.Size = new Size(335, 46);
             LblProFile.TabIndex = 9;
             LblProFile.Text = "USER_PROFILE:";
             // 
             // LblUserEmail
             // 
             LblUserEmail.AutoSize = true;
-            LblUserEmail.Location = new Point(51, 220);
+            LblUserEmail.Location = new Point(108, 451);
+            LblUserEmail.Margin = new Padding(6, 0, 6, 0);
             LblUserEmail.Name = "LblUserEmail";
-            LblUserEmail.Size = new Size(143, 25);
+            LblUserEmail.Size = new Size(284, 46);
             LblUserEmail.TabIndex = 7;
             LblUserEmail.Text = "USER_EMAIL:";
             // 
             // TxtUserEmail
             // 
-            TxtUserEmail.Location = new Point(256, 220);
-            TxtUserEmail.Margin = new Padding(3, 4, 3, 4);
+            TxtUserEmail.Location = new Point(544, 451);
+            TxtUserEmail.Margin = new Padding(6, 8, 6, 8);
             TxtUserEmail.Name = "TxtUserEmail";
-            TxtUserEmail.Size = new Size(334, 30);
+            TxtUserEmail.Size = new Size(705, 53);
             TxtUserEmail.TabIndex = 6;
             // 
             // LblUserPwd
             // 
             LblUserPwd.AutoSize = true;
-            LblUserPwd.Location = new Point(51, 161);
+            LblUserPwd.Location = new Point(108, 330);
+            LblUserPwd.Margin = new Padding(6, 0, 6, 0);
             LblUserPwd.Name = "LblUserPwd";
-            LblUserPwd.Size = new Size(130, 25);
+            LblUserPwd.Size = new Size(259, 46);
             LblUserPwd.TabIndex = 5;
             LblUserPwd.Text = "USER_PWD:";
             // 
             // TxtUserPwd
             // 
-            TxtUserPwd.Location = new Point(256, 161);
-            TxtUserPwd.Margin = new Padding(3, 4, 3, 4);
+            TxtUserPwd.Location = new Point(544, 330);
+            TxtUserPwd.Margin = new Padding(6, 8, 6, 8);
             TxtUserPwd.Name = "TxtUserPwd";
             TxtUserPwd.PasswordChar = '*';
-            TxtUserPwd.Size = new Size(334, 30);
+            TxtUserPwd.Size = new Size(705, 53);
             TxtUserPwd.TabIndex = 4;
             // 
             // LblUserName
             // 
             LblUserName.AutoSize = true;
-            LblUserName.Location = new Point(51, 99);
+            LblUserName.Location = new Point(108, 203);
+            LblUserName.Margin = new Padding(6, 0, 6, 0);
             LblUserName.Name = "LblUserName";
-            LblUserName.Size = new Size(141, 25);
+            LblUserName.Size = new Size(281, 46);
             LblUserName.TabIndex = 3;
             LblUserName.Text = "USER_NAME:";
             // 
             // TxtUserName
             // 
-            TxtUserName.Location = new Point(256, 99);
-            TxtUserName.Margin = new Padding(3, 4, 3, 4);
+            TxtUserName.Location = new Point(544, 203);
+            TxtUserName.Margin = new Padding(6, 8, 6, 8);
             TxtUserName.Name = "TxtUserName";
-            TxtUserName.Size = new Size(334, 30);
+            TxtUserName.Size = new Size(705, 53);
             TxtUserName.TabIndex = 2;
             // 
             // LblUserID
             // 
             LblUserID.AutoSize = true;
-            LblUserID.Location = new Point(51, 36);
+            LblUserID.Location = new Point(108, 74);
+            LblUserID.Margin = new Padding(6, 0, 6, 0);
             LblUserID.Name = "LblUserID";
-            LblUserID.Size = new Size(102, 25);
+            LblUserID.Size = new Size(204, 46);
             LblUserID.TabIndex = 1;
             LblUserID.Text = "USER_ID:";
             // 
             // TxtUserID
             // 
-            TxtUserID.Location = new Point(256, 36);
-            TxtUserID.Margin = new Padding(3, 4, 3, 4);
+            TxtUserID.Location = new Point(544, 74);
+            TxtUserID.Margin = new Padding(6, 8, 6, 8);
             TxtUserID.Name = "TxtUserID";
-            TxtUserID.Size = new Size(334, 30);
+            TxtUserID.Size = new Size(705, 53);
             TxtUserID.TabIndex = 0;
             // 
             // tabPageSuppliers
@@ -278,9 +284,9 @@
             tabPageSuppliers.Controls.Add(tabControlSupplier);
             tabPageSuppliers.ImageIndex = 0;
             tabPageSuppliers.Location = new Point(201, 0);
-            tabPageSuppliers.Margin = new Padding(3, 4, 3, 4);
+            tabPageSuppliers.Margin = new Padding(6, 8, 6, 8);
             tabPageSuppliers.Name = "tabPageSuppliers";
-            tabPageSuppliers.Size = new Size(858, 600);
+            tabPageSuppliers.Size = new Size(1722, 1056);
             tabPageSuppliers.TabIndex = 1;
             tabPageSuppliers.Text = "Suppliers";
             tabPageSuppliers.UseVisualStyleBackColor = true;
@@ -290,10 +296,10 @@
             tabControlSupplier.Controls.Add(tabPageSupplierInfo);
             tabControlSupplier.Dock = DockStyle.Fill;
             tabControlSupplier.Location = new Point(0, 0);
-            tabControlSupplier.Margin = new Padding(3, 4, 3, 4);
+            tabControlSupplier.Margin = new Padding(6, 8, 6, 8);
             tabControlSupplier.Name = "tabControlSupplier";
             tabControlSupplier.SelectedIndex = 0;
-            tabControlSupplier.Size = new Size(858, 600);
+            tabControlSupplier.Size = new Size(1722, 1056);
             tabControlSupplier.TabIndex = 0;
             // 
             // tabPageSupplierInfo
@@ -312,11 +318,11 @@
             tabPageSupplierInfo.Controls.Add(uiLabel1);
             tabPageSupplierInfo.Controls.Add(uiTxtSupID);
             tabPageSupplierInfo.Controls.Add(uiLabelSupID);
-            tabPageSupplierInfo.Location = new Point(4, 34);
-            tabPageSupplierInfo.Margin = new Padding(3, 4, 3, 4);
+            tabPageSupplierInfo.Location = new Point(10, 63);
+            tabPageSupplierInfo.Margin = new Padding(6, 8, 6, 8);
             tabPageSupplierInfo.Name = "tabPageSupplierInfo";
-            tabPageSupplierInfo.Padding = new Padding(3, 4, 3, 4);
-            tabPageSupplierInfo.Size = new Size(850, 562);
+            tabPageSupplierInfo.Padding = new Padding(6, 8, 6, 8);
+            tabPageSupplierInfo.Size = new Size(1702, 983);
             tabPageSupplierInfo.TabIndex = 0;
             tabPageSupplierInfo.Text = "Supplier Info";
             tabPageSupplierInfo.UseVisualStyleBackColor = true;
@@ -326,24 +332,24 @@
             uiListBox1.Font = new Font("Microsoft Sans Serif", 12F);
             uiListBox1.HoverColor = Color.FromArgb(155, 200, 255);
             uiListBox1.ItemSelectForeColor = Color.White;
-            uiListBox1.Location = new Point(410, 29);
-            uiListBox1.Margin = new Padding(5, 7, 5, 7);
-            uiListBox1.MinimumSize = new Size(1, 1);
+            uiListBox1.Location = new Point(871, 59);
+            uiListBox1.Margin = new Padding(11, 14, 11, 14);
+            uiListBox1.MinimumSize = new Size(2, 2);
             uiListBox1.Name = "uiListBox1";
-            uiListBox1.Padding = new Padding(2, 3, 2, 3);
+            uiListBox1.Padding = new Padding(4, 6, 4, 6);
             uiListBox1.ShowText = false;
-            uiListBox1.Size = new Size(400, 513);
+            uiListBox1.Size = new Size(850, 1052);
             uiListBox1.TabIndex = 10;
             uiListBox1.Text = "uiListBoxSuppliers";
             // 
             // uiBtnCommit
             // 
             uiBtnCommit.Font = new Font("Microsoft Sans Serif", 12F);
-            uiBtnCommit.Location = new Point(205, 473);
-            uiBtnCommit.Margin = new Padding(3, 4, 3, 4);
-            uiBtnCommit.MinimumSize = new Size(1, 1);
+            uiBtnCommit.Location = new Point(436, 970);
+            uiBtnCommit.Margin = new Padding(6, 8, 6, 8);
+            uiBtnCommit.MinimumSize = new Size(2, 2);
             uiBtnCommit.Name = "uiBtnCommit";
-            uiBtnCommit.Size = new Size(197, 72);
+            uiBtnCommit.Size = new Size(419, 148);
             uiBtnCommit.TabIndex = 5;
             uiBtnCommit.Text = "&Commit";
             uiBtnCommit.TipsFont = new Font("Microsoft Sans Serif", 9F);
@@ -352,13 +358,13 @@
             // uiTxtSubName
             // 
             uiTxtSubName.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTxtSubName.Location = new Point(205, 103);
-            uiTxtSubName.Margin = new Padding(5, 7, 5, 7);
-            uiTxtSubName.MinimumSize = new Size(1, 21);
+            uiTxtSubName.Location = new Point(436, 211);
+            uiTxtSubName.Margin = new Padding(11, 14, 11, 14);
+            uiTxtSubName.MinimumSize = new Size(2, 43);
             uiTxtSubName.Name = "uiTxtSubName";
-            uiTxtSubName.Padding = new Padding(6, 7, 6, 7);
+            uiTxtSubName.Padding = new Padding(13, 14, 13, 14);
             uiTxtSubName.ShowText = false;
-            uiTxtSubName.Size = new Size(197, 61);
+            uiTxtSubName.Size = new Size(419, 125);
             uiTxtSubName.TabIndex = 3;
             uiTxtSubName.TextAlignment = ContentAlignment.MiddleLeft;
             uiTxtSubName.Watermark = "";
@@ -367,22 +373,23 @@
             // 
             uiLabelSubName.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabelSubName.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabelSubName.Location = new Point(17, 103);
+            uiLabelSubName.Location = new Point(36, 211);
+            uiLabelSubName.Margin = new Padding(6, 0, 6, 0);
             uiLabelSubName.Name = "uiLabelSubName";
-            uiLabelSubName.Size = new Size(154, 61);
+            uiLabelSubName.Size = new Size(327, 125);
             uiLabelSubName.TabIndex = 9;
             uiLabelSubName.Text = "Name:";
             // 
             // uiTxtAddress
             // 
             uiTxtAddress.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTxtAddress.Location = new Point(205, 401);
-            uiTxtAddress.Margin = new Padding(5, 7, 5, 7);
-            uiTxtAddress.MinimumSize = new Size(1, 21);
+            uiTxtAddress.Location = new Point(436, 822);
+            uiTxtAddress.Margin = new Padding(11, 14, 11, 14);
+            uiTxtAddress.MinimumSize = new Size(2, 43);
             uiTxtAddress.Name = "uiTxtAddress";
-            uiTxtAddress.Padding = new Padding(6, 7, 6, 7);
+            uiTxtAddress.Padding = new Padding(13, 14, 13, 14);
             uiTxtAddress.ShowText = false;
-            uiTxtAddress.Size = new Size(197, 61);
+            uiTxtAddress.Size = new Size(419, 125);
             uiTxtAddress.TabIndex = 8;
             uiTxtAddress.TextAlignment = ContentAlignment.MiddleLeft;
             uiTxtAddress.Watermark = "";
@@ -390,13 +397,13 @@
             // uiTxtEmail
             // 
             uiTxtEmail.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTxtEmail.Location = new Point(205, 327);
-            uiTxtEmail.Margin = new Padding(5, 7, 5, 7);
-            uiTxtEmail.MinimumSize = new Size(1, 21);
+            uiTxtEmail.Location = new Point(436, 670);
+            uiTxtEmail.Margin = new Padding(11, 14, 11, 14);
+            uiTxtEmail.MinimumSize = new Size(2, 43);
             uiTxtEmail.Name = "uiTxtEmail";
-            uiTxtEmail.Padding = new Padding(6, 7, 6, 7);
+            uiTxtEmail.Padding = new Padding(13, 14, 13, 14);
             uiTxtEmail.ShowText = false;
-            uiTxtEmail.Size = new Size(197, 61);
+            uiTxtEmail.Size = new Size(419, 125);
             uiTxtEmail.TabIndex = 7;
             uiTxtEmail.TextAlignment = ContentAlignment.MiddleLeft;
             uiTxtEmail.Watermark = "";
@@ -404,13 +411,13 @@
             // uiTxtPhone
             // 
             uiTxtPhone.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTxtPhone.Location = new Point(205, 252);
-            uiTxtPhone.Margin = new Padding(5, 7, 5, 7);
-            uiTxtPhone.MinimumSize = new Size(1, 21);
+            uiTxtPhone.Location = new Point(436, 517);
+            uiTxtPhone.Margin = new Padding(11, 14, 11, 14);
+            uiTxtPhone.MinimumSize = new Size(2, 43);
             uiTxtPhone.Name = "uiTxtPhone";
-            uiTxtPhone.Padding = new Padding(6, 7, 6, 7);
+            uiTxtPhone.Padding = new Padding(13, 14, 13, 14);
             uiTxtPhone.ShowText = false;
-            uiTxtPhone.Size = new Size(197, 61);
+            uiTxtPhone.Size = new Size(419, 125);
             uiTxtPhone.TabIndex = 6;
             uiTxtPhone.TextAlignment = ContentAlignment.MiddleLeft;
             uiTxtPhone.Watermark = "";
@@ -418,13 +425,13 @@
             // uiTxtContactPerson
             // 
             uiTxtContactPerson.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTxtContactPerson.Location = new Point(205, 177);
-            uiTxtContactPerson.Margin = new Padding(5, 7, 5, 7);
-            uiTxtContactPerson.MinimumSize = new Size(1, 21);
+            uiTxtContactPerson.Location = new Point(436, 363);
+            uiTxtContactPerson.Margin = new Padding(11, 14, 11, 14);
+            uiTxtContactPerson.MinimumSize = new Size(2, 43);
             uiTxtContactPerson.Name = "uiTxtContactPerson";
-            uiTxtContactPerson.Padding = new Padding(6, 7, 6, 7);
+            uiTxtContactPerson.Padding = new Padding(13, 14, 13, 14);
             uiTxtContactPerson.ShowText = false;
-            uiTxtContactPerson.Size = new Size(197, 61);
+            uiTxtContactPerson.Size = new Size(419, 125);
             uiTxtContactPerson.TabIndex = 3;
             uiTxtContactPerson.TextAlignment = ContentAlignment.MiddleLeft;
             uiTxtContactPerson.Watermark = "";
@@ -433,9 +440,10 @@
             // 
             uiLabel4.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel4.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel4.Location = new Point(17, 401);
+            uiLabel4.Location = new Point(36, 822);
+            uiLabel4.Margin = new Padding(6, 0, 6, 0);
             uiLabel4.Name = "uiLabel4";
-            uiLabel4.Size = new Size(154, 61);
+            uiLabel4.Size = new Size(327, 125);
             uiLabel4.TabIndex = 5;
             uiLabel4.Text = "Address:";
             // 
@@ -443,9 +451,10 @@
             // 
             uiLabel3.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel3.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel3.Location = new Point(21, 327);
+            uiLabel3.Location = new Point(45, 670);
+            uiLabel3.Margin = new Padding(6, 0, 6, 0);
             uiLabel3.Name = "uiLabel3";
-            uiLabel3.Size = new Size(151, 61);
+            uiLabel3.Size = new Size(321, 125);
             uiLabel3.TabIndex = 4;
             uiLabel3.Text = "Email:";
             // 
@@ -453,9 +462,10 @@
             // 
             uiLabel2.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel2.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel2.Location = new Point(21, 252);
+            uiLabel2.Location = new Point(45, 517);
+            uiLabel2.Margin = new Padding(6, 0, 6, 0);
             uiLabel2.Name = "uiLabel2";
-            uiLabel2.Size = new Size(151, 61);
+            uiLabel2.Size = new Size(321, 125);
             uiLabel2.TabIndex = 3;
             uiLabel2.Text = "Phone:";
             // 
@@ -463,9 +473,10 @@
             // 
             uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(21, 177);
+            uiLabel1.Location = new Point(45, 363);
+            uiLabel1.Margin = new Padding(6, 0, 6, 0);
             uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(151, 61);
+            uiLabel1.Size = new Size(321, 125);
             uiLabel1.TabIndex = 2;
             uiLabel1.Text = "Contact Person:";
             uiLabel1.Click += uiLabel1_Click;
@@ -473,13 +484,13 @@
             // uiTxtSupID
             // 
             uiTxtSupID.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTxtSupID.Location = new Point(205, 29);
-            uiTxtSupID.Margin = new Padding(5, 7, 5, 7);
-            uiTxtSupID.MinimumSize = new Size(1, 21);
+            uiTxtSupID.Location = new Point(436, 59);
+            uiTxtSupID.Margin = new Padding(11, 14, 11, 14);
+            uiTxtSupID.MinimumSize = new Size(2, 43);
             uiTxtSupID.Name = "uiTxtSupID";
-            uiTxtSupID.Padding = new Padding(6, 7, 6, 7);
+            uiTxtSupID.Padding = new Padding(13, 14, 13, 14);
             uiTxtSupID.ShowText = false;
-            uiTxtSupID.Size = new Size(197, 61);
+            uiTxtSupID.Size = new Size(419, 125);
             uiTxtSupID.TabIndex = 1;
             uiTxtSupID.TextAlignment = ContentAlignment.MiddleLeft;
             uiTxtSupID.Watermark = "";
@@ -488,9 +499,10 @@
             // 
             uiLabelSupID.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabelSupID.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabelSupID.Location = new Point(21, 29);
+            uiLabelSupID.Location = new Point(45, 59);
+            uiLabelSupID.Margin = new Padding(6, 0, 6, 0);
             uiLabelSupID.Name = "uiLabelSupID";
-            uiLabelSupID.Size = new Size(151, 61);
+            uiLabelSupID.Size = new Size(321, 125);
             uiLabelSupID.TabIndex = 0;
             uiLabelSupID.Text = "ID:";
             // 
@@ -499,9 +511,9 @@
             tabPagePurchase.Controls.Add(tabControlPurchase);
             tabPagePurchase.ImageIndex = 1;
             tabPagePurchase.Location = new Point(201, 0);
-            tabPagePurchase.Margin = new Padding(3, 4, 3, 4);
+            tabPagePurchase.Margin = new Padding(6, 8, 6, 8);
             tabPagePurchase.Name = "tabPagePurchase";
-            tabPagePurchase.Size = new Size(858, 600);
+            tabPagePurchase.Size = new Size(1722, 1056);
             tabPagePurchase.TabIndex = 0;
             tabPagePurchase.Text = "Purchase";
             tabPagePurchase.UseVisualStyleBackColor = true;
@@ -511,62 +523,75 @@
             tabControlPurchase.Controls.Add(tabPagePurchaseInfo);
             tabControlPurchase.Dock = DockStyle.Fill;
             tabControlPurchase.Location = new Point(0, 0);
-            tabControlPurchase.Margin = new Padding(3, 4, 3, 4);
+            tabControlPurchase.Margin = new Padding(6, 8, 6, 8);
             tabControlPurchase.Name = "tabControlPurchase";
             tabControlPurchase.SelectedIndex = 0;
-            tabControlPurchase.Size = new Size(858, 600);
+            tabControlPurchase.Size = new Size(1722, 1056);
             tabControlPurchase.TabIndex = 0;
             // 
             // tabPagePurchaseInfo
             // 
-            tabPagePurchaseInfo.Location = new Point(4, 34);
-            tabPagePurchaseInfo.Margin = new Padding(3, 4, 3, 4);
+            tabPagePurchaseInfo.Location = new Point(10, 63);
+            tabPagePurchaseInfo.Margin = new Padding(6, 8, 6, 8);
             tabPagePurchaseInfo.Name = "tabPagePurchaseInfo";
-            tabPagePurchaseInfo.Padding = new Padding(3, 4, 3, 4);
-            tabPagePurchaseInfo.Size = new Size(850, 562);
+            tabPagePurchaseInfo.Padding = new Padding(6, 8, 6, 8);
+            tabPagePurchaseInfo.Size = new Size(1702, 983);
             tabPagePurchaseInfo.TabIndex = 0;
             tabPagePurchaseInfo.Text = "Purchase Info";
             tabPagePurchaseInfo.UseVisualStyleBackColor = true;
             // 
             // tabPageReport
             // 
+            tabPageReport.Controls.Add(button4);
             tabPageReport.Controls.Add(button3);
             tabPageReport.Controls.Add(button2);
             tabPageReport.Controls.Add(button1);
             tabPageReport.Controls.Add(listView1);
             tabPageReport.ImageIndex = 9;
             tabPageReport.Location = new Point(201, 0);
+            tabPageReport.Margin = new Padding(6, 6, 6, 6);
             tabPageReport.Name = "tabPageReport";
-            tabPageReport.Size = new Size(704, 515);
+            tabPageReport.Size = new Size(1722, 1056);
             tabPageReport.TabIndex = 4;
             tabPageReport.Text = "Report";
             tabPageReport.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            button3.Location = new Point(918, 701);
+            button3.Margin = new Padding(2, 2, 2, 2);
+            button3.Name = "button3";
+            button3.Size = new Size(344, 141);
+            button3.TabIndex = 3;
+            button3.Text = "button3";
+            button3.UseVisualStyleBackColor = true;
+            // 
             // button2
             // 
-            button2.Location = new Point(268, 342);
-            button2.Margin = new Padding(1, 1, 1, 1);
+            button2.Location = new Point(570, 701);
+            button2.Margin = new Padding(2, 2, 2, 2);
             button2.Name = "button2";
-            button2.Size = new Size(162, 69);
+            button2.Size = new Size(344, 141);
             button2.TabIndex = 2;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(104, 342);
-            button1.Margin = new Padding(1, 1, 1, 1);
+            button1.Location = new Point(221, 701);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(162, 69);
+            button1.Size = new Size(344, 141);
             button1.TabIndex = 1;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
             // listView1
             // 
-            listView1.Location = new Point(104, 147);
+            listView1.Location = new Point(221, 301);
+            listView1.Margin = new Padding(6, 6, 6, 6);
             listView1.Name = "listView1";
-            listView1.Size = new Size(517, 175);
+            listView1.Size = new Size(1094, 355);
             listView1.TabIndex = 0;
             listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -587,23 +612,22 @@
             imageList1.Images.SetKeyName(9, "1439294732_taskbar.ico");
             imageList1.Images.SetKeyName(10, "logoff.ico");
             // 
-            // button3
+            // button4
             // 
-            button3.Location = new Point(432, 342);
-            button3.Margin = new Padding(1);
-            button3.Name = "button3";
-            button3.Size = new Size(162, 69);
-            button3.TabIndex = 3;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            button4.Location = new Point(1290, 701);
+            button4.Name = "button4";
+            button4.Size = new Size(282, 147);
+            button4.TabIndex = 4;
+            button4.Text = "button4";
+            button4.UseVisualStyleBackColor = true;
             // 
             // FrmMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(905, 515);
+            ClientSize = new Size(1923, 1056);
             Controls.Add(uiTabControlMain);
-            Margin = new Padding(3, 4, 3, 4);
+            Margin = new Padding(6, 8, 6, 8);
             Name = "FrmMain";
             Text = "My Application";
             WindowState = FormWindowState.Maximized;
@@ -665,5 +689,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private Button button4;
     }
 }
