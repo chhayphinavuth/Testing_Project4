@@ -68,6 +68,7 @@
             tabControlPurchase = new TabControl();
             tabPagePurchaseInfo = new TabPage();
             tabPageReport = new TabPage();
+            button6 = new Button();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
@@ -75,7 +76,6 @@
             button1 = new Button();
             listView1 = new ListView();
             imageList1 = new ImageList(components);
-            button6 = new Button();
             uiTabControlMain.SuspendLayout();
             tabPageUserAccount.SuspendLayout();
             tabPageSuppliers.SuspendLayout();
@@ -548,6 +548,17 @@
             tabPageReport.Text = "Report";
             tabPageReport.UseVisualStyleBackColor = true;
             // 
+            // button6
+            // 
+            button6.Location = new Point(277, 413);
+            button6.Margin = new Padding(1);
+            button6.Name = "button6";
+            button6.Size = new Size(153, 69);
+            button6.TabIndex = 6;
+            button6.Text = "button6";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
             // button5
             // 
             button5.Location = new Point(104, 413);
@@ -624,17 +635,6 @@
             imageList1.Images.SetKeyName(8, "Download from the Cloud_1.ico");
             imageList1.Images.SetKeyName(9, "1439294732_taskbar.ico");
             imageList1.Images.SetKeyName(10, "logoff.ico");
-            // 
-            // button6
-            // 
-            button6.Location = new Point(277, 413);
-            button6.Margin = new Padding(1);
-            button6.Name = "button6";
-            button6.Size = new Size(162, 69);
-            button6.TabIndex = 6;
-            button6.Text = "button6";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
             // 
             // FrmMain
             // 
