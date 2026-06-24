@@ -71,6 +71,7 @@
             listView1 = new ListView();
             imageList1 = new ImageList(components);
             button1 = new Button();
+            button2 = new Button();
             uiTabControlMain.SuspendLayout();
             tabPageUserAccount.SuspendLayout();
             tabPageSuppliers.SuspendLayout();
@@ -539,6 +540,7 @@
             // 
             // tabPageReport
             // 
+            tabPageReport.Controls.Add(button2);
             tabPageReport.Controls.Add(button1);
             tabPageReport.Controls.Add(listView1);
             tabPageReport.ImageIndex = 9;
@@ -584,6 +586,15 @@
             button1.TabIndex = 1;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(558, 701);
+            button2.Name = "button2";
+            button2.Size = new Size(345, 142);
+            button2.TabIndex = 2;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
             // 
             // FrmMain
             // 
@@ -651,5 +662,6 @@
         private TabPage tabPageReport;
         private ListView listView1;
         private Button button1;
+        private Button button2;
     }
 }
