@@ -250,7 +250,7 @@ namespace WinFormsApp2
                 try
                 {
                     sql =
-                        "DELETE FROM [USER_LST] " +                        
+                        "DELETE FROM [USER_LST] " +
                         " WHERE [USER_ID]=@userid ";
                     cmd = new SqlCommand(sql, MyConn);
                     cmd.Parameters.AddWithValue("@userid", int.Parse(TxtUserID.Text));
@@ -285,6 +285,11 @@ namespace WinFormsApp2
                         "Error:" + ex.Message);
                 }
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //Hello5
         }
     }
 }
