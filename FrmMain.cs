@@ -16,9 +16,6 @@ namespace WinFormsApp2
             InitializeComponent();
         }
 
-        public string User_Master = "root";
-        public string pwd_Master = "root@12345**";
-
         private void uiLabel1_Click(object sender, EventArgs e)
         {
 
@@ -119,10 +116,6 @@ namespace WinFormsApp2
             CboProFile.Items.Add("Administrator");
             CboProFile.Items.Add("User");
             CboProFile.Text = CboProFile.Items[0].ToString();
-
-            //tabPageUserAccount.Hide =
-            //var manager = new uni
-
         }
 
         private void ButView_Click(object sender, EventArgs e)
