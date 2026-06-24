@@ -76,6 +76,7 @@
             tabPagePurchaseInfo = new TabPage();
             tabPageReport = new TabPage();
             imageList1 = new ImageList(components);
+            listView1 = new ListView();
             uiTabControlMain.SuspendLayout();
             tabPageLogIn.SuspendLayout();
             tabPageUserAccount.SuspendLayout();
@@ -84,6 +85,7 @@
             tabPageSupplierInfo.SuspendLayout();
             tabPagePurchase.SuspendLayout();
             tabControlPurchase.SuspendLayout();
+            tabPageReport.SuspendLayout();
             SuspendLayout();
             // 
             // uiTabControlMain
@@ -209,7 +211,7 @@
             tabPageUserAccount.Location = new Point(201, 0);
             tabPageUserAccount.Margin = new Padding(3, 4, 3, 4);
             tabPageUserAccount.Name = "tabPageUserAccount";
-            tabPageUserAccount.Size = new Size(858, 600);
+            tabPageUserAccount.Size = new Size(704, 515);
             tabPageUserAccount.TabIndex = 2;
             tabPageUserAccount.Text = "User Account";
             tabPageUserAccount.UseVisualStyleBackColor = true;
@@ -352,7 +354,7 @@
             tabPageSuppliers.Location = new Point(201, 0);
             tabPageSuppliers.Margin = new Padding(3, 4, 3, 4);
             tabPageSuppliers.Name = "tabPageSuppliers";
-            tabPageSuppliers.Size = new Size(858, 600);
+            tabPageSuppliers.Size = new Size(704, 515);
             tabPageSuppliers.TabIndex = 1;
             tabPageSuppliers.Text = "Suppliers";
             tabPageSuppliers.UseVisualStyleBackColor = true;
@@ -365,7 +367,7 @@
             tabControlSupplier.Margin = new Padding(3, 4, 3, 4);
             tabControlSupplier.Name = "tabControlSupplier";
             tabControlSupplier.SelectedIndex = 0;
-            tabControlSupplier.Size = new Size(858, 600);
+            tabControlSupplier.Size = new Size(704, 515);
             tabControlSupplier.TabIndex = 0;
             // 
             // tabPageSupplierInfo
@@ -388,7 +390,7 @@
             tabPageSupplierInfo.Margin = new Padding(3, 4, 3, 4);
             tabPageSupplierInfo.Name = "tabPageSupplierInfo";
             tabPageSupplierInfo.Padding = new Padding(3, 4, 3, 4);
-            tabPageSupplierInfo.Size = new Size(850, 562);
+            tabPageSupplierInfo.Size = new Size(696, 477);
             tabPageSupplierInfo.TabIndex = 0;
             tabPageSupplierInfo.Text = "Supplier Info";
             tabPageSupplierInfo.UseVisualStyleBackColor = true;
@@ -402,7 +404,7 @@
             uiListBox1.Margin = new Padding(5, 6, 5, 6);
             uiListBox1.MinimumSize = new Size(1, 2);
             uiListBox1.Name = "uiListBox1";
-            uiListBox1.Padding = new Padding(2, 2, 2, 2);
+            uiListBox1.Padding = new Padding(2);
             uiListBox1.ShowText = false;
             uiListBox1.Size = new Size(400, 514);
             uiListBox1.TabIndex = 10;
@@ -428,7 +430,7 @@
             uiTxtSubName.Margin = new Padding(5, 6, 5, 6);
             uiTxtSubName.MinimumSize = new Size(1, 22);
             uiTxtSubName.Name = "uiTxtSubName";
-            uiTxtSubName.Padding = new Padding(6, 6, 6, 6);
+            uiTxtSubName.Padding = new Padding(6);
             uiTxtSubName.ShowText = false;
             uiTxtSubName.Size = new Size(197, 62);
             uiTxtSubName.TabIndex = 3;
@@ -452,7 +454,7 @@
             uiTxtAddress.Margin = new Padding(5, 6, 5, 6);
             uiTxtAddress.MinimumSize = new Size(1, 22);
             uiTxtAddress.Name = "uiTxtAddress";
-            uiTxtAddress.Padding = new Padding(6, 6, 6, 6);
+            uiTxtAddress.Padding = new Padding(6);
             uiTxtAddress.ShowText = false;
             uiTxtAddress.Size = new Size(197, 62);
             uiTxtAddress.TabIndex = 8;
@@ -466,7 +468,7 @@
             uiTxtEmail.Margin = new Padding(5, 6, 5, 6);
             uiTxtEmail.MinimumSize = new Size(1, 22);
             uiTxtEmail.Name = "uiTxtEmail";
-            uiTxtEmail.Padding = new Padding(6, 6, 6, 6);
+            uiTxtEmail.Padding = new Padding(6);
             uiTxtEmail.ShowText = false;
             uiTxtEmail.Size = new Size(197, 62);
             uiTxtEmail.TabIndex = 7;
@@ -480,7 +482,7 @@
             uiTxtPhone.Margin = new Padding(5, 6, 5, 6);
             uiTxtPhone.MinimumSize = new Size(1, 22);
             uiTxtPhone.Name = "uiTxtPhone";
-            uiTxtPhone.Padding = new Padding(6, 6, 6, 6);
+            uiTxtPhone.Padding = new Padding(6);
             uiTxtPhone.ShowText = false;
             uiTxtPhone.Size = new Size(197, 62);
             uiTxtPhone.TabIndex = 6;
@@ -494,7 +496,7 @@
             uiTxtContactPerson.Margin = new Padding(5, 6, 5, 6);
             uiTxtContactPerson.MinimumSize = new Size(1, 22);
             uiTxtContactPerson.Name = "uiTxtContactPerson";
-            uiTxtContactPerson.Padding = new Padding(6, 6, 6, 6);
+            uiTxtContactPerson.Padding = new Padding(6);
             uiTxtContactPerson.ShowText = false;
             uiTxtContactPerson.Size = new Size(197, 62);
             uiTxtContactPerson.TabIndex = 3;
@@ -549,7 +551,7 @@
             uiTxtSupID.Margin = new Padding(5, 6, 5, 6);
             uiTxtSupID.MinimumSize = new Size(1, 22);
             uiTxtSupID.Name = "uiTxtSupID";
-            uiTxtSupID.Padding = new Padding(6, 6, 6, 6);
+            uiTxtSupID.Padding = new Padding(6);
             uiTxtSupID.ShowText = false;
             uiTxtSupID.Size = new Size(197, 62);
             uiTxtSupID.TabIndex = 1;
@@ -602,6 +604,7 @@
             // 
             // tabPageReport
             // 
+            tabPageReport.Controls.Add(listView1);
             tabPageReport.Location = new Point(201, 0);
             tabPageReport.Margin = new Padding(3, 4, 3, 4);
             tabPageReport.Name = "tabPageReport";
@@ -626,6 +629,14 @@
             imageList1.Images.SetKeyName(8, "Download from the Cloud_1.ico");
             imageList1.Images.SetKeyName(9, "Key.ico");
             // 
+            // listView1
+            // 
+            listView1.Location = new Point(30, 107);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(547, 183);
+            listView1.TabIndex = 0;
+            listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -648,6 +659,7 @@
             tabPageSupplierInfo.ResumeLayout(false);
             tabPagePurchase.ResumeLayout(false);
             tabControlPurchase.ResumeLayout(false);
+            tabPageReport.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -699,5 +711,6 @@
         private TextBox textBox1;
         private Label label1;
         private Button button1;
+        private ListView listView1;
     }
 }
