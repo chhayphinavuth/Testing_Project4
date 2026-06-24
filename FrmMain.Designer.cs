@@ -68,13 +68,13 @@
             tabControlPurchase = new TabControl();
             tabPagePurchaseInfo = new TabPage();
             tabPageReport = new TabPage();
+            button5 = new Button();
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             listView1 = new ListView();
             imageList1 = new ImageList(components);
-            button5 = new Button();
             uiTabControlMain.SuspendLayout();
             tabPageUserAccount.SuspendLayout();
             tabPageSuppliers.SuspendLayout();
@@ -115,7 +115,7 @@
             tabPageLogIn.Location = new Point(201, 0);
             tabPageLogIn.Margin = new Padding(3, 4, 3, 4);
             tabPageLogIn.Name = "tabPageLogIn";
-            tabPageLogIn.Size = new Size(704, 515);
+            tabPageLogIn.Size = new Size(834, 515);
             tabPageLogIn.TabIndex = 3;
             tabPageLogIn.Text = "Log In";
             tabPageLogIn.UseVisualStyleBackColor = true;
@@ -139,7 +139,7 @@
             tabPageUserAccount.Location = new Point(201, 0);
             tabPageUserAccount.Margin = new Padding(3, 4, 3, 4);
             tabPageUserAccount.Name = "tabPageUserAccount";
-            tabPageUserAccount.Size = new Size(704, 515);
+            tabPageUserAccount.Size = new Size(834, 515);
             tabPageUserAccount.TabIndex = 2;
             tabPageUserAccount.Text = "User Account";
             tabPageUserAccount.UseVisualStyleBackColor = true;
@@ -282,7 +282,7 @@
             tabPageSuppliers.Location = new Point(201, 0);
             tabPageSuppliers.Margin = new Padding(3, 4, 3, 4);
             tabPageSuppliers.Name = "tabPageSuppliers";
-            tabPageSuppliers.Size = new Size(704, 515);
+            tabPageSuppliers.Size = new Size(834, 515);
             tabPageSuppliers.TabIndex = 1;
             tabPageSuppliers.Text = "Suppliers";
             tabPageSuppliers.UseVisualStyleBackColor = true;
@@ -295,7 +295,7 @@
             tabControlSupplier.Margin = new Padding(3, 4, 3, 4);
             tabControlSupplier.Name = "tabControlSupplier";
             tabControlSupplier.SelectedIndex = 0;
-            tabControlSupplier.Size = new Size(704, 515);
+            tabControlSupplier.Size = new Size(834, 515);
             tabControlSupplier.TabIndex = 0;
             // 
             // tabPageSupplierInfo
@@ -318,7 +318,7 @@
             tabPageSupplierInfo.Margin = new Padding(3, 4, 3, 4);
             tabPageSupplierInfo.Name = "tabPageSupplierInfo";
             tabPageSupplierInfo.Padding = new Padding(3, 4, 3, 4);
-            tabPageSupplierInfo.Size = new Size(696, 477);
+            tabPageSupplierInfo.Size = new Size(826, 477);
             tabPageSupplierInfo.TabIndex = 0;
             tabPageSupplierInfo.Text = "Supplier Info";
             tabPageSupplierInfo.UseVisualStyleBackColor = true;
@@ -503,7 +503,7 @@
             tabPagePurchase.Location = new Point(201, 0);
             tabPagePurchase.Margin = new Padding(3, 4, 3, 4);
             tabPagePurchase.Name = "tabPagePurchase";
-            tabPagePurchase.Size = new Size(704, 515);
+            tabPagePurchase.Size = new Size(834, 515);
             tabPagePurchase.TabIndex = 0;
             tabPagePurchase.Text = "Purchase";
             tabPagePurchase.UseVisualStyleBackColor = true;
@@ -516,7 +516,7 @@
             tabControlPurchase.Margin = new Padding(3, 4, 3, 4);
             tabControlPurchase.Name = "tabControlPurchase";
             tabControlPurchase.SelectedIndex = 0;
-            tabControlPurchase.Size = new Size(704, 515);
+            tabControlPurchase.Size = new Size(834, 515);
             tabControlPurchase.TabIndex = 0;
             // 
             // tabPagePurchaseInfo
@@ -525,7 +525,7 @@
             tabPagePurchaseInfo.Margin = new Padding(3, 4, 3, 4);
             tabPagePurchaseInfo.Name = "tabPagePurchaseInfo";
             tabPagePurchaseInfo.Padding = new Padding(3, 4, 3, 4);
-            tabPagePurchaseInfo.Size = new Size(696, 477);
+            tabPagePurchaseInfo.Size = new Size(826, 477);
             tabPagePurchaseInfo.TabIndex = 0;
             tabPagePurchaseInfo.Text = "Purchase Info";
             tabPagePurchaseInfo.UseVisualStyleBackColor = true;
@@ -546,20 +546,32 @@
             tabPageReport.Text = "Report";
             tabPageReport.UseVisualStyleBackColor = true;
             // 
+            // button5
+            // 
+            button5.Location = new Point(104, 413);
+            button5.Margin = new Padding(1);
+            button5.Name = "button5";
+            button5.Size = new Size(162, 69);
+            button5.TabIndex = 5;
+            button5.Text = "button5";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // button4
             // 
-            button4.Location = new Point(607, 342);
-            button4.Margin = new Padding(1, 1, 1, 1);
+            button4.Location = new Point(596, 342);
+            button4.Margin = new Padding(1);
             button4.Name = "button4";
-            button4.Size = new Size(133, 72);
+            button4.Size = new Size(133, 69);
             button4.TabIndex = 4;
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
             button3.Location = new Point(432, 342);
-            button3.Margin = new Padding(1, 1, 1, 1);
+            button3.Margin = new Padding(1);
             button3.Name = "button3";
             button3.Size = new Size(162, 69);
             button3.TabIndex = 3;
@@ -569,7 +581,7 @@
             // button2
             // 
             button2.Location = new Point(268, 342);
-            button2.Margin = new Padding(1, 1, 1, 1);
+            button2.Margin = new Padding(1);
             button2.Name = "button2";
             button2.Size = new Size(162, 69);
             button2.TabIndex = 2;
@@ -579,7 +591,7 @@
             // button1
             // 
             button1.Location = new Point(104, 342);
-            button1.Margin = new Padding(1, 1, 1, 1);
+            button1.Margin = new Padding(1);
             button1.Name = "button1";
             button1.Size = new Size(162, 69);
             button1.TabIndex = 1;
@@ -610,16 +622,6 @@
             imageList1.Images.SetKeyName(8, "Download from the Cloud_1.ico");
             imageList1.Images.SetKeyName(9, "1439294732_taskbar.ico");
             imageList1.Images.SetKeyName(10, "logoff.ico");
-            // 
-            // button5
-            // 
-            button5.Location = new Point(104, 413);
-            button5.Margin = new Padding(1);
-            button5.Name = "button5";
-            button5.Size = new Size(162, 69);
-            button5.TabIndex = 5;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
             // 
             // FrmMain
             // 
