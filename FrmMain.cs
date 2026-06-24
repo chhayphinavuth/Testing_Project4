@@ -295,7 +295,7 @@ namespace WinFormsApp2
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Do you want to continue button 2", "Confirm message....", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
         }
 
         private void button6_Click(object sender, EventArgs e)
