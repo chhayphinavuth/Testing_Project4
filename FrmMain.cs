@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -300,6 +301,11 @@ namespace WinFormsApp2
         private void button6_Click(object sender, EventArgs e)
         {
             //Hello45666666666666
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show ("Do you want to continue","Confirm message....",MessageBoxButtons.OKCancel,MessageBoxIcon.Information)
         }
     }
 }
