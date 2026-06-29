@@ -313,5 +313,10 @@ namespace WinFormsApp2
         {
             MessageBox.Show("Do you want to continue button 2", "Confirm message....", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
         }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Do you want to continue button 5", "Confirm message....", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+        }
     }
 }
