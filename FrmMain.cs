@@ -18,10 +18,6 @@ namespace WinFormsApp2
             InitializeComponent();
         }
 
-        private void uiLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void uiBtnCommit_Click(object sender, EventArgs e)
         {

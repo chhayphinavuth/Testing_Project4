@@ -471,7 +471,7 @@
             uiLabel1.Size = new Size(151, 61);
             uiLabel1.TabIndex = 2;
             uiLabel1.Text = "Contact Person:";
-            uiLabel1.Click += uiLabel1_Click;
+            //uiLabel1.Click += uiLabel1_Click;
             // 
             // uiTxtSupID
             // 
