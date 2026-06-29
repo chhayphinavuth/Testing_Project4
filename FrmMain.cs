@@ -117,6 +117,9 @@ namespace WinFormsApp2
             CboProFile.Items.Add("Administrator");
             CboProFile.Items.Add("User");
             CboProFile.Text = CboProFile.Items[0].ToString();
+
+            uiCalendar1.Font = new Font("Segoe UI", 12, FontStyle.Regular); 
+
         }
 
         private void ButView_Click(object sender, EventArgs e)
