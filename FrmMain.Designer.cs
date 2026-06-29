@@ -75,6 +75,7 @@
             button1 = new Button();
             listView1 = new ListView();
             imageList1 = new ImageList(components);
+            uiCalendar1 = new Sunny.UI.UICalendar();
             uiTabControlMain.SuspendLayout();
             tabPageUserAccount.SuspendLayout();
             tabPageSuppliers.SuspendLayout();
@@ -103,7 +104,7 @@
             uiTabControlMain.Multiline = true;
             uiTabControlMain.Name = "uiTabControlMain";
             uiTabControlMain.SelectedIndex = 0;
-            uiTabControlMain.Size = new Size(905, 515);
+            uiTabControlMain.Size = new Size(1205, 624);
             uiTabControlMain.SizeMode = TabSizeMode.Fixed;
             uiTabControlMain.TabBackColor = Color.Goldenrod;
             uiTabControlMain.TabIndex = 4;
@@ -139,7 +140,7 @@
             tabPageUserAccount.Location = new Point(201, 0);
             tabPageUserAccount.Margin = new Padding(3, 4, 3, 4);
             tabPageUserAccount.Name = "tabPageUserAccount";
-            tabPageUserAccount.Size = new Size(834, 515);
+            tabPageUserAccount.Size = new Size(704, 515);
             tabPageUserAccount.TabIndex = 2;
             tabPageUserAccount.Text = "User Account";
             tabPageUserAccount.UseVisualStyleBackColor = true;
@@ -282,7 +283,7 @@
             tabPageSuppliers.Location = new Point(201, 0);
             tabPageSuppliers.Margin = new Padding(3, 4, 3, 4);
             tabPageSuppliers.Name = "tabPageSuppliers";
-            tabPageSuppliers.Size = new Size(834, 515);
+            tabPageSuppliers.Size = new Size(704, 515);
             tabPageSuppliers.TabIndex = 1;
             tabPageSuppliers.Text = "Suppliers";
             tabPageSuppliers.UseVisualStyleBackColor = true;
@@ -295,7 +296,7 @@
             tabControlSupplier.Margin = new Padding(3, 4, 3, 4);
             tabControlSupplier.Name = "tabControlSupplier";
             tabControlSupplier.SelectedIndex = 0;
-            tabControlSupplier.Size = new Size(834, 515);
+            tabControlSupplier.Size = new Size(704, 515);
             tabControlSupplier.TabIndex = 0;
             // 
             // tabPageSupplierInfo
@@ -318,7 +319,7 @@
             tabPageSupplierInfo.Margin = new Padding(3, 4, 3, 4);
             tabPageSupplierInfo.Name = "tabPageSupplierInfo";
             tabPageSupplierInfo.Padding = new Padding(3, 4, 3, 4);
-            tabPageSupplierInfo.Size = new Size(826, 477);
+            tabPageSupplierInfo.Size = new Size(696, 477);
             tabPageSupplierInfo.TabIndex = 0;
             tabPageSupplierInfo.Text = "Supplier Info";
             tabPageSupplierInfo.UseVisualStyleBackColor = true;
@@ -503,7 +504,7 @@
             tabPagePurchase.Location = new Point(201, 0);
             tabPagePurchase.Margin = new Padding(3, 4, 3, 4);
             tabPagePurchase.Name = "tabPagePurchase";
-            tabPagePurchase.Size = new Size(834, 515);
+            tabPagePurchase.Size = new Size(704, 515);
             tabPagePurchase.TabIndex = 0;
             tabPagePurchase.Text = "Purchase";
             tabPagePurchase.UseVisualStyleBackColor = true;
@@ -516,7 +517,7 @@
             tabControlPurchase.Margin = new Padding(3, 4, 3, 4);
             tabControlPurchase.Name = "tabControlPurchase";
             tabControlPurchase.SelectedIndex = 0;
-            tabControlPurchase.Size = new Size(834, 515);
+            tabControlPurchase.Size = new Size(704, 515);
             tabControlPurchase.TabIndex = 0;
             // 
             // tabPagePurchaseInfo
@@ -525,13 +526,14 @@
             tabPagePurchaseInfo.Margin = new Padding(3, 4, 3, 4);
             tabPagePurchaseInfo.Name = "tabPagePurchaseInfo";
             tabPagePurchaseInfo.Padding = new Padding(3, 4, 3, 4);
-            tabPagePurchaseInfo.Size = new Size(826, 477);
+            tabPagePurchaseInfo.Size = new Size(696, 477);
             tabPagePurchaseInfo.TabIndex = 0;
             tabPagePurchaseInfo.Text = "Purchase Info";
             tabPagePurchaseInfo.UseVisualStyleBackColor = true;
             // 
             // tabPageReport
             // 
+            tabPageReport.Controls.Add(uiCalendar1);
             tabPageReport.Controls.Add(button5);
             tabPageReport.Controls.Add(button4);
             tabPageReport.Controls.Add(button3);
@@ -541,17 +543,17 @@
             tabPageReport.ImageIndex = 9;
             tabPageReport.Location = new Point(201, 0);
             tabPageReport.Name = "tabPageReport";
-            tabPageReport.Size = new Size(704, 515);
+            tabPageReport.Size = new Size(1004, 624);
             tabPageReport.TabIndex = 4;
             tabPageReport.Text = "Report";
             tabPageReport.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            button5.Location = new Point(104, 418);
-            button5.Margin = new Padding(1, 1, 1, 1);
+            button5.Location = new Point(268, 464);
+            button5.Margin = new Padding(1);
             button5.Name = "button5";
-            button5.Size = new Size(133, 69);
+            button5.Size = new Size(162, 69);
             button5.TabIndex = 5;
             button5.Text = "button5";
             button5.UseVisualStyleBackColor = true;
@@ -559,10 +561,10 @@
             // 
             // button4
             // 
-            button4.Location = new Point(596, 342);
-            button4.Margin = new Padding(1, 1, 1, 1);
+            button4.Location = new Point(104, 464);
+            button4.Margin = new Padding(1);
             button4.Name = "button4";
-            button4.Size = new Size(133, 69);
+            button4.Size = new Size(162, 69);
             button4.TabIndex = 4;
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = true;
@@ -570,8 +572,8 @@
             // 
             // button3
             // 
-            button3.Location = new Point(432, 342);
-            button3.Margin = new Padding(1, 1, 1, 1);
+            button3.Location = new Point(432, 393);
+            button3.Margin = new Padding(1);
             button3.Name = "button3";
             button3.Size = new Size(162, 69);
             button3.TabIndex = 3;
@@ -580,8 +582,8 @@
             // 
             // button2
             // 
-            button2.Location = new Point(268, 342);
-            button2.Margin = new Padding(1, 1, 1, 1);
+            button2.Location = new Point(268, 393);
+            button2.Margin = new Padding(1);
             button2.Name = "button2";
             button2.Size = new Size(162, 69);
             button2.TabIndex = 2;
@@ -591,8 +593,8 @@
             // 
             // button1
             // 
-            button1.Location = new Point(104, 342);
-            button1.Margin = new Padding(1, 1, 1, 1);
+            button1.Location = new Point(104, 393);
+            button1.Margin = new Padding(1);
             button1.Name = "button1";
             button1.Size = new Size(162, 69);
             button1.TabIndex = 1;
@@ -602,7 +604,7 @@
             // 
             // listView1
             // 
-            listView1.Location = new Point(104, 147);
+            listView1.Location = new Point(104, 198);
             listView1.Name = "listView1";
             listView1.Size = new Size(517, 175);
             listView1.TabIndex = 0;
@@ -625,11 +627,25 @@
             imageList1.Images.SetKeyName(9, "1439294732_taskbar.ico");
             imageList1.Images.SetKeyName(10, "logoff.ico");
             // 
+            // uiCalendar1
+            // 
+            uiCalendar1.Date = new DateTime(2026, 6, 29, 0, 0, 0, 0);
+            uiCalendar1.FillColor = Color.White;
+            uiCalendar1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiCalendar1.Location = new Point(104, 12);
+            uiCalendar1.MinimumSize = new Size(240, 180);
+            uiCalendar1.Name = "uiCalendar1";
+            uiCalendar1.PrimaryColor = Color.FromArgb(80, 160, 255);
+            uiCalendar1.Size = new Size(517, 180);
+            uiCalendar1.TabIndex = 6;
+            uiCalendar1.Text = "uiCalendar1";
+            uiCalendar1.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(905, 515);
+            ClientSize = new Size(1205, 624);
             Controls.Add(uiTabControlMain);
             Margin = new Padding(3, 4, 3, 4);
             Name = "FrmMain";
@@ -695,5 +711,6 @@
         private Button button3;
         private Button button4;
         private Button button5;
+        private Sunny.UI.UICalendar uiCalendar1;
     }
 }
