@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.IdentityModel.Tokens;
+using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -111,6 +112,7 @@ namespace WinFormsApp2
         }
 
 
+
         private void FrmMain_Load(object sender, EventArgs e)
         {
             CboProFile.Items.Clear();
@@ -118,7 +120,8 @@ namespace WinFormsApp2
             CboProFile.Items.Add("User");
             CboProFile.Text = CboProFile.Items[0].ToString();
 
-            uiCalendar1.Font = new Font("Segoe UI", 12, FontStyle.Regular); 
+            UIStyles.CultureInfo = CultureInfos.en_US;
+            //uiCalendar1.Font = new Font("Segoe UI", 12, FontStyle.Regular); 
 
         }
 
