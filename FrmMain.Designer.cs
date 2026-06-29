@@ -68,6 +68,7 @@
             tabControlPurchase = new TabControl();
             tabPagePurchaseInfo = new TabPage();
             tabPageReport = new TabPage();
+            uiCalendar1 = new Sunny.UI.UICalendar();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
@@ -75,7 +76,7 @@
             button1 = new Button();
             listView1 = new ListView();
             imageList1 = new ImageList(components);
-            uiCalendar1 = new Sunny.UI.UICalendar();
+            button6 = new Button();
             uiTabControlMain.SuspendLayout();
             tabPageUserAccount.SuspendLayout();
             tabPageSuppliers.SuspendLayout();
@@ -116,7 +117,7 @@
             tabPageLogIn.Location = new Point(201, 0);
             tabPageLogIn.Margin = new Padding(3, 4, 3, 4);
             tabPageLogIn.Name = "tabPageLogIn";
-            tabPageLogIn.Size = new Size(704, 515);
+            tabPageLogIn.Size = new Size(1004, 624);
             tabPageLogIn.TabIndex = 3;
             tabPageLogIn.Text = "Log In";
             tabPageLogIn.UseVisualStyleBackColor = true;
@@ -140,7 +141,7 @@
             tabPageUserAccount.Location = new Point(201, 0);
             tabPageUserAccount.Margin = new Padding(3, 4, 3, 4);
             tabPageUserAccount.Name = "tabPageUserAccount";
-            tabPageUserAccount.Size = new Size(704, 515);
+            tabPageUserAccount.Size = new Size(1004, 624);
             tabPageUserAccount.TabIndex = 2;
             tabPageUserAccount.Text = "User Account";
             tabPageUserAccount.UseVisualStyleBackColor = true;
@@ -283,7 +284,7 @@
             tabPageSuppliers.Location = new Point(201, 0);
             tabPageSuppliers.Margin = new Padding(3, 4, 3, 4);
             tabPageSuppliers.Name = "tabPageSuppliers";
-            tabPageSuppliers.Size = new Size(704, 515);
+            tabPageSuppliers.Size = new Size(1004, 624);
             tabPageSuppliers.TabIndex = 1;
             tabPageSuppliers.Text = "Suppliers";
             tabPageSuppliers.UseVisualStyleBackColor = true;
@@ -296,7 +297,7 @@
             tabControlSupplier.Margin = new Padding(3, 4, 3, 4);
             tabControlSupplier.Name = "tabControlSupplier";
             tabControlSupplier.SelectedIndex = 0;
-            tabControlSupplier.Size = new Size(704, 515);
+            tabControlSupplier.Size = new Size(1004, 624);
             tabControlSupplier.TabIndex = 0;
             // 
             // tabPageSupplierInfo
@@ -319,7 +320,7 @@
             tabPageSupplierInfo.Margin = new Padding(3, 4, 3, 4);
             tabPageSupplierInfo.Name = "tabPageSupplierInfo";
             tabPageSupplierInfo.Padding = new Padding(3, 4, 3, 4);
-            tabPageSupplierInfo.Size = new Size(696, 477);
+            tabPageSupplierInfo.Size = new Size(996, 586);
             tabPageSupplierInfo.TabIndex = 0;
             tabPageSupplierInfo.Text = "Supplier Info";
             tabPageSupplierInfo.UseVisualStyleBackColor = true;
@@ -471,7 +472,6 @@
             uiLabel1.Size = new Size(151, 61);
             uiLabel1.TabIndex = 2;
             uiLabel1.Text = "Contact Person:";
-            //uiLabel1.Click += uiLabel1_Click;
             // 
             // uiTxtSupID
             // 
@@ -504,7 +504,7 @@
             tabPagePurchase.Location = new Point(201, 0);
             tabPagePurchase.Margin = new Padding(3, 4, 3, 4);
             tabPagePurchase.Name = "tabPagePurchase";
-            tabPagePurchase.Size = new Size(704, 515);
+            tabPagePurchase.Size = new Size(1004, 624);
             tabPagePurchase.TabIndex = 0;
             tabPagePurchase.Text = "Purchase";
             tabPagePurchase.UseVisualStyleBackColor = true;
@@ -517,7 +517,7 @@
             tabControlPurchase.Margin = new Padding(3, 4, 3, 4);
             tabControlPurchase.Name = "tabControlPurchase";
             tabControlPurchase.SelectedIndex = 0;
-            tabControlPurchase.Size = new Size(704, 515);
+            tabControlPurchase.Size = new Size(1004, 624);
             tabControlPurchase.TabIndex = 0;
             // 
             // tabPagePurchaseInfo
@@ -526,13 +526,14 @@
             tabPagePurchaseInfo.Margin = new Padding(3, 4, 3, 4);
             tabPagePurchaseInfo.Name = "tabPagePurchaseInfo";
             tabPagePurchaseInfo.Padding = new Padding(3, 4, 3, 4);
-            tabPagePurchaseInfo.Size = new Size(696, 477);
+            tabPagePurchaseInfo.Size = new Size(996, 586);
             tabPagePurchaseInfo.TabIndex = 0;
             tabPagePurchaseInfo.Text = "Purchase Info";
             tabPagePurchaseInfo.UseVisualStyleBackColor = true;
             // 
             // tabPageReport
             // 
+            tabPageReport.Controls.Add(button6);
             tabPageReport.Controls.Add(uiCalendar1);
             tabPageReport.Controls.Add(button5);
             tabPageReport.Controls.Add(button4);
@@ -547,6 +548,20 @@
             tabPageReport.TabIndex = 4;
             tabPageReport.Text = "Report";
             tabPageReport.UseVisualStyleBackColor = true;
+            // 
+            // uiCalendar1
+            // 
+            uiCalendar1.Date = new DateTime(2026, 6, 29, 0, 0, 0, 0);
+            uiCalendar1.FillColor = Color.White;
+            uiCalendar1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiCalendar1.Location = new Point(104, 12);
+            uiCalendar1.MinimumSize = new Size(240, 180);
+            uiCalendar1.Name = "uiCalendar1";
+            uiCalendar1.PrimaryColor = Color.FromArgb(80, 160, 255);
+            uiCalendar1.Size = new Size(517, 180);
+            uiCalendar1.TabIndex = 6;
+            uiCalendar1.Text = "uiCalendar1";
+            uiCalendar1.TextAlignment = ContentAlignment.MiddleCenter;
             // 
             // button5
             // 
@@ -627,19 +642,15 @@
             imageList1.Images.SetKeyName(9, "1439294732_taskbar.ico");
             imageList1.Images.SetKeyName(10, "logoff.ico");
             // 
-            // uiCalendar1
+            // button6
             // 
-            uiCalendar1.Date = new DateTime(2026, 6, 29, 0, 0, 0, 0);
-            uiCalendar1.FillColor = Color.White;
-            uiCalendar1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiCalendar1.Location = new Point(104, 12);
-            uiCalendar1.MinimumSize = new Size(240, 180);
-            uiCalendar1.Name = "uiCalendar1";
-            uiCalendar1.PrimaryColor = Color.FromArgb(80, 160, 255);
-            uiCalendar1.Size = new Size(517, 180);
-            uiCalendar1.TabIndex = 6;
-            uiCalendar1.Text = "uiCalendar1";
-            uiCalendar1.TextAlignment = ContentAlignment.MiddleCenter;
+            button6.Location = new Point(432, 464);
+            button6.Margin = new Padding(1);
+            button6.Name = "button6";
+            button6.Size = new Size(162, 69);
+            button6.TabIndex = 7;
+            button6.Text = "button6";
+            button6.UseVisualStyleBackColor = true;
             // 
             // FrmMain
             // 
@@ -712,5 +723,6 @@
         private Button button4;
         private Button button5;
         private Sunny.UI.UICalendar uiCalendar1;
+        private Button button6;
     }
 }
