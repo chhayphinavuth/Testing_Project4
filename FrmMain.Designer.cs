@@ -68,7 +68,6 @@
             tabControlPurchase = new TabControl();
             tabPagePurchaseInfo = new TabPage();
             tabPageReport = new TabPage();
-            button5 = new Button();
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
@@ -532,7 +531,6 @@
             // 
             // tabPageReport
             // 
-            tabPageReport.Controls.Add(button5);
             tabPageReport.Controls.Add(button4);
             tabPageReport.Controls.Add(button3);
             tabPageReport.Controls.Add(button2);
@@ -545,17 +543,6 @@
             tabPageReport.TabIndex = 4;
             tabPageReport.Text = "Report";
             tabPageReport.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            button5.Location = new Point(104, 413);
-            button5.Margin = new Padding(1);
-            button5.Name = "button5";
-            button5.Size = new Size(162, 69);
-            button5.TabIndex = 5;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -694,6 +681,5 @@
         private Button button2;
         private Button button3;
         private Button button4;
-        private Button button5;
     }
 }
